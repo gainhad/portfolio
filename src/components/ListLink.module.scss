@@ -1,0 +1,9 @@
+.listLink {
+  text-shadow: none;
+  margin: 2vw;
+  background-image: none;
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}

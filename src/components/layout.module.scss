@@ -1,0 +1,35 @@
+@import "../utils/colors";
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 150%;
+    height: 8vh;
+    padding: 0 1em 0 1em;
+    background: rgba(4, 8, 82, .15)
+}
+
+
+.link {
+    height: min-content;
+    text-decoration: underline;
+    background-image: none;
+    text-shadow: none;
+    &:hover {
+	text-decoration: none;
+    }
+}
+
+.navList {
+    display: flex;
+    justify-self: flex-end;
+    margin: 0;
+    height: max-content;
+    li {
+	height: max-content;
+	margin: 0;
+	padding-left: 1em;
+	list-style-type: none;
+    }
+}

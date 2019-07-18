@@ -1,0 +1,25 @@
+@import '../utils/colors.scss';
+
+html,
+body,
+#___gatsby {
+  height: 100%;
+  box-sizing: border-box;
+  background: $background-one;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#gatsby-focus-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+a {
+  text-shadow: 0.03em 0 $background-one;
+}

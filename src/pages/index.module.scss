@@ -1,0 +1,40 @@
+@import '../utils/colors.scss';
+
+.index {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  grid-template-columns: 1fr 50% 40% 1fr;
+  flex-grow: 1;
+  justify-items: center;
+}
+
+.profilePhoto {
+  grid-column: 3 / 4;
+  grid-row: 1 / 4;
+  align-self: center;
+  border-radius: 50%;
+  transform: scale(0.6);
+}
+
+.name {
+  grid-column: 2 / 3;
+  align-self: end;
+  font-size: 3rem;
+  margin-right: 20px;
+  text-align: center;
+}
+
+#navList {
+  grid-column: 2 / 3;
+  @media (max-width: 1151px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: start;
+  }
+}
+
+.tagLine {
+  grid-column: 2 / 3;
+  align-self: start;
+  margin: 0;
+}

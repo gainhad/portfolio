@@ -1,0 +1,21 @@
+@import '../utils/colors.scss';
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  height: 100%;
+}
+
+#contactMessage {
+  padding-top: 25vh;
+  width: 80vw;
+  margin: 0;
+  text-align: center;
+}
+
+.email {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
