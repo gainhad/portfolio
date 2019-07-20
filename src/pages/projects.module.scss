@@ -1,0 +1,21 @@
+@import '../utils/colors.scss';
+
+.projectList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(505px, 1fr));
+  width: 100%;
+  grid-auto-flow: dense;
+  grid-gap: 1vh 1vw;
+  a {
+    background-image: none;
+    height: min-content;
+    width: min-content;
+  }
+}
+
+.projects {
+  padding: 0 10px 0 5vw;
+}
+
+.title {
+}

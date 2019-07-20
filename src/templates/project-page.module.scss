@@ -1,0 +1,39 @@
+@import '../utils/colors.scss';
+
+.page {
+  padding: 0 5vw 0 5vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: max-content;
+  font-size: 100%;
+  h1 {
+    font-size: 1.3rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    text-shadow: 0px 0px 0.3px $background-one;
+  }
+  h2 {
+    padding-left: 1rem;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  ul {
+    padding-left: 2rem;
+    margin-left: 0;
+    list-style-type: none;
+  }
+  p {
+    padding-left: 2rem;
+  }
+}
+
+#title {
+  text-align: center;
+  font-size: 2.5rem;
+  border: none;
+}
+
+.topImage {
+  width: max(40vw);
+  border-radius: 15px;
+}
