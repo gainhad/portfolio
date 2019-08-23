@@ -3,8 +3,8 @@
 .projectCard {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  width: 500px;
-  height: 400px;
+  max-width: 500px;
+  width: 90vw;
   padding: 10px;
   background: $background-one;
   transition: 0.2s;
@@ -12,6 +12,9 @@
     transition: 0.2s;
     transform: scale(1.02);
     box-shadow: 0 4px 18px 5px rgba(0, 0, 0, 0.5);
+  }
+  img {
+    border-radius: 5px;
   }
 }
 
