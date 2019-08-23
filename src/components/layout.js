@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styles from './layout.module.scss';
-import ListLink from './ListLink';
 
 const Layout = props => {
   return (
@@ -10,11 +9,29 @@ const Layout = props => {
         <Link className={styles.link} to="/">
           Home
         </Link>
-        <ul className={styles.navList}>
-          <ListLink to="/about">About</ListLink>
-          <ListLink to="/projects">Projects</ListLink>
-          <ListLink to="/contact">Contact</ListLink>
-        </ul>
+        <div className={styles.navList}>
+          <Link
+            to="/about"
+            className={styles.link}
+            activeClassName={styles.activeLink}
+          >
+            About
+          </Link>
+          <Link
+            to="/projects"
+            className={styles.link}
+            activeClassName={styles.activeLink}
+          >
+            Projects
+          </Link>
+          <Link
+            to="/contact"
+            className={styles.link}
+            activeClassName={styles.activeLink}
+          >
+            Contact
+          </Link>
+        </div>
       </div>
       {props.children}
     </>

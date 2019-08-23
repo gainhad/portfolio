@@ -1,35 +1,43 @@
-@import "../utils/colors";
+@import '../utils/colors';
 
 .navBar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 150%;
-    height: 8vh;
-    padding: 0 1em 0 1em;
-    background: rgba(4, 8, 82, .15)
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: $background-one;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 150%;
+  height: min-content;
+  padding: 0.1em 1em 0.1em 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 0 1rem 0 1rem;
+  z-index: 3;
 }
 
+.activeLink {
+  transition: 0.1s;
+  font-style: italic;
+  transform: scale(1.1);
+  &:hover {
+    color: rgba(19, 72, 150, 1) !important;
+  }
+}
 
 .link {
-    height: min-content;
-    text-decoration: underline;
-    background-image: none;
-    text-shadow: none;
-    &:hover {
-	text-decoration: none;
-    }
+  text-shadow: none;
+  margin: 0 2vw 0 0;
+  background-image: none;
+  transition: 0.1s;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.1s;
+    color: rgba(136, 170, 219, 1);
+  }
 }
 
 .navList {
-    display: flex;
-    justify-self: flex-end;
-    margin: 0;
-    height: max-content;
-    li {
-	height: max-content;
-	margin: 0;
-	padding-left: 1em;
-	list-style-type: none;
-    }
+  height: min-content;
+  display: flex;
+  justify-self: flex-end;
 }
