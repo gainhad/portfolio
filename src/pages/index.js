@@ -1,29 +1,53 @@
 import React from 'react';
+import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import styles from './index.module.scss';
 import ListLink from '../components/ListLink';
-import NavList from '../components/NavList';
+import Img from 'gatsby-image';
+import { Link } from 'gatsby';
 
-const IndexPage = () => (
-  <>
-    <SEO title="Home" />
-    <div className={styles.index}>
-      <h1 className={styles.name}>Hadley Gaines</h1>
-      <p className={styles.tagLine}>
-        Here will be a descriptive line that I haven't thought of yet
-      </p>
-      <img
-        src="https://assets.teenvogue.com/photos/5b1dca8039ea107bc58a20e5/1:1/w_662,h_662,c_limit/tout.jpg"
-        alt="Headshot of Hadley Gaines"
-        className={styles.profilePhoto}
-      ></img>
-      <NavList id={styles.navList}>
-        <ListLink to="/about">About Me</ListLink>
-        <ListLink to="/projects">My Projects</ListLink>
-        <ListLink to="/contact">Contact Me</ListLink>
-      </NavList>
-    </div>
-  </>
-);
+const IndexPage = ({ data }) => {
+  console.log(data);
+  console.log(data.file.childImageSharp.fluid);
+  return (
+    <>
+      <SEO title="Home" />
+      <div className={styles.index}>
+        <h1 className={styles.name}>Hadley Gaines</h1>
+        <p className={styles.tagLine}>
+          Recent U of M grad (May 2019), former staff for a governor, and
+          current aspiring web developer.
+        </p>
+        <Img
+          fluid={data.file.childImageSharp.fluid}
+          className={styles.profilePhoto}
+        />
+        <div id={styles.navList}>
+          <Link className={styles.link} to="/about">
+            About Me
+          </Link>
+          <Link className={styles.link} to="/projects">
+            My Projects
+          </Link>
+          <Link className={styles.link} to="/contact">
+            Contact Me
+          </Link>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export const query = graphql`
+  query {
+    file(relativePath: { eq: "headshot.JPG" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

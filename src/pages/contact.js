@@ -9,8 +9,8 @@ const ContactPage = () => (
     <Layout>
       <div className={styles.contact}>
         <h1 id={styles.contactMessage}>
-          Intersted in discussing potential opportunities, or have any questions
-          for me? Please email me at the address below!
+          Interested in discussing potential opportunities, or have any
+          questions for me? Please email me at the address below!
         </h1>
         <a
           className={styles.email}
