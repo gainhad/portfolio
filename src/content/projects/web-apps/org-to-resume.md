@@ -1,26 +1,25 @@
 ---
 title: "Org to Resume"
-featuredImage: ./rabbit-two.jpeg
+featuredImage: ../../../images/org-to-resume-one.png
+projectLink: "https://org-to-resume.netlify.com"
+codeLink: "https://github.com/gainhad/org-to-resume"
 ---
 # Project Description
 
-*Workout Logger* (Feel free to suggest a better name!) is a mobile-first workout tracking application that I built because I have never found an app that I enjoyed using. I wanted to keep the app simple and fast to use, but also provide a great platform for reviewing workout data in order to track progress.
+Org-to-Resume allows users to write Org Markup documents (Org Markup Information), style it with CSS, and then download a PDF of their document. While it works for any type of document, I created the app because I wanted a way to keep my resumes in plain-text (Org markup is plain text, similar to Markdown) that I could track with git, yet still be able to generate clean, well-formatted resumes.
 
 # Future Plans
 
-Currently, the app is primarily designed for mobile. While it will work on a desktop, the layout is certainly more optimized for a mobile screen. I plan to add a better desktop view for reviewing data though, as that would really take advantage of the extra screen space. I'm pretty happy with the features built in to the workout part of the app, but I would like to continue adding ways to view your data in the future.
+The app currently only supports a subset of the Org Markup syntax. While I think I have pretty much everything necessary for my use case (resumes), I do hope to add support for more Org features in the future. I would also like to connect the app to Dropbox or Google Drive. Currently, documents are simply stored in localStorage, which is great for preventing lost progress on refresh, but obviously not a long-term storage solution.
 
 # Technology used
 
 ## Frontend
-- Framework - React (through Create React App) using functional components and React Hooks.
-- State Management - Redux
-- Style - SCSS, although I would like to move it over to Styled Components or CSS Modules in the future
+- Framework - React (through Create React App) using primarily class components and lifecycle methods
+- Style - CSS (SCSS) Modules
 
 ## Backend
-- Language/Runtime - Javascript/NodeJS
-- Framework - Express
-- Database - Postgresql
+- Org-to-Resume was originally going to run a headless Google Chrome on the server to render PDFs, but I've since realized a simple print media query in CSS works even better! No backend needed.
 
 ## Hosting
-Everything is hosted on Google's cloud platform. I am using App Engine to host the application, and Cloud SQL to host the database
+Everything is hosted through Netlify. This is my first time using Netlify, but I really enjoy it and will host any other front-end projects with them.

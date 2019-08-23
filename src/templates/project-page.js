@@ -14,6 +14,14 @@ export default ({ data }) => {
           className={styles.topImage}
           fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
         />
+        <div className={styles.linkArea}>
+          <a href={post.frontmatter.projectLink} target="_blank">
+            Project Link
+          </a>
+          <a href={post.frontmatter.codeLink} target="_blank">
+            Project Code
+          </a>
+        </div>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </Layout>
@@ -26,6 +34,8 @@ export const query = graphql`
       html
       frontmatter {
         title
+        projectLink
+        codeLink
         featuredImage {
           childImageSharp {
             fluid {

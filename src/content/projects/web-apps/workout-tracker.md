@@ -1,6 +1,8 @@
 ---
 title: "Workout Logger"
-featuredImage: ./rabbit.jpeg
+featuredImage: ../../../images/workout-logger-one.png
+projectLink: "https://totemic-courage-246615.appspot.com/"
+codeLink: "https://github.com/gainhad/workout-logger"
 ---
 
 # Project Description

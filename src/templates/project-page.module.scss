@@ -33,7 +33,15 @@
   border: none;
 }
 
+.linkArea {
+  font-size: 1.2rem;
+  display: flex;
+  width: 40vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .topImage {
   width: max(40vw);
-  border-radius: 15px;
+  border-radius: 5px;
 }
