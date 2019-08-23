@@ -9,7 +9,7 @@
   align-items: center;
   font-size: 150%;
   height: min-content;
-  padding: 0.1em 1em 0.1em 1em;
+  padding: 0.1rem 1rem 0.1rem 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   margin: 0 1rem 0 1rem;
   z-index: 3;
@@ -40,4 +40,17 @@
   height: min-content;
   display: flex;
   justify-self: flex-end;
+}
+
+@media (max-width: 800px) {
+  .navBar {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .navBar {
+    font-size: 1rem;
+    margin: 0 .5rem 0 .5rem;
+  }
 }
