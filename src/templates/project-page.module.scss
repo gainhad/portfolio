@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: max-content;
+  height: 100%;
   font-size: 100%;
   h1 {
     font-size: 1.3rem;
@@ -38,10 +38,19 @@
   display: flex;
   width: 40vw;
   flex-wrap: wrap;
+  flex-shrink: 0;
   justify-content: space-around;
 }
 
 .topImage {
-  width: max(40vw);
+  width: 40vw;
+  flex-shrink: 0;
   border-radius: 5px;
+  transition: width .2s;
+}
+
+@media (max-width: 600px) {
+  .topImage {
+    width: 80vw;
+  }
 }
