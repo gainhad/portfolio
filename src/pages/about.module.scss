@@ -1,7 +1,9 @@
 @import '../utils/colors.scss';
 
 .content {
-  margin: 0 10vw;
+  padding: 0 10vw;
+  height: 100%;
+  overflow: auto;
   h2 {
     margin-top: 10px;
   }
