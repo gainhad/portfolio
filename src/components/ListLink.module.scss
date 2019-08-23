@@ -1,9 +1,12 @@
 .listLink {
   text-shadow: none;
-  margin: 2vw;
+  margin: 0 2vw 0 0;
   background-image: none;
-  text-decoration: underline;
+  transition: 0.2s;
+  background: grey;
   &:hover {
-    text-decoration: none;
+    font-size: 1.7rem;
+    transition: 0.2s;
+    color: rgba(136, 170, 219, 1);
   }
 }
