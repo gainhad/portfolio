@@ -15,10 +15,18 @@ export default ({ data }) => {
           fluid={post.frontmatter.featuredImage.childImageSharp.fluid}
         />
         <div className={styles.linkArea}>
-          <a href={post.frontmatter.projectLink} target="_blank">
+          <a
+            href={post.frontmatter.projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Project Link
           </a>
-          <a href={post.frontmatter.codeLink} target="_blank">
+          <a
+            href={post.frontmatter.codeLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Project Code
           </a>
         </div>

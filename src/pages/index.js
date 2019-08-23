@@ -2,7 +2,6 @@ import React from 'react';
 import { graphql } from 'gatsby';
 import SEO from '../components/seo';
 import styles from './index.module.scss';
-import ListLink from '../components/ListLink';
 import Img from 'gatsby-image';
 import { Link } from 'gatsby';
 
