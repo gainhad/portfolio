@@ -55,3 +55,19 @@
   margin: 0;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .index {
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: min-content min-content min-content 1fr;
+    padding-top: 5vh;
+  }
+  .profilePhoto {
+    grid-column: 2;
+    grid-row: 1;
+    width: 70%;
+  }
+  #navList {
+    justify-content: center;
+  }
+}
