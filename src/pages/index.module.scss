@@ -2,10 +2,11 @@
 
 .index {
   display: grid;
-  grid-template-rows: 1fr min-content 1fr;
+  grid-template-rows: 1fr min-content 50%;
   grid-template-columns: 1fr 50% 40% 1fr;
   flex-grow: 1;
   justify-items: center;
+  z-index: 10;
 }
 
 .profilePhoto {
@@ -14,6 +15,7 @@
   align-self: center;
   border-radius: 50%;
   width: 80%;
+  transition: transform 1s;
 }
 
 .name {
@@ -54,12 +56,20 @@
   align-self: start;
   margin: 0;
   text-align: center;
+  padding-bottom: 10px;
+}
+
+.background {
+  position: absolute;
+  background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+  width: 100%;
+  height: 50%;
 }
 
 @media (max-width: 800px) {
   .index {
     grid-template-columns: 1fr 90% 1fr;
-    grid-template-rows: min-content min-content min-content 1fr;
+    grid-template-rows: 1fr min-content min-content 35%;
     padding-top: 5vh;
   }
   .profilePhoto {
@@ -70,5 +80,8 @@
   }
   #navList {
     justify-content: center;
+  }
+  .background {
+    height: 70%;
   }
 }

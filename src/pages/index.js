@@ -11,6 +11,7 @@ const IndexPage = ({ data }) => {
   return (
     <>
       <SEO title="Home" />
+      <div className={styles.background}></div>
       <div className={styles.index}>
         <h1 className={styles.name}>Hadley Gaines</h1>
         <p className={styles.tagLine}>
