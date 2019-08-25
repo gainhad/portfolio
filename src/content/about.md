@@ -4,7 +4,7 @@ title: "About Me"
 
 # About Me
 
-I recently graduated (May 2019) from the University of Michigan with a major in Economics and a Minor in Computer Science. During my junior and senior years in college, and the summers in between, I worked in the office of Governor Snyder, first as an unpaid intern (ouch) and then as paid part-time staff. Prior to that, I spent my summers working for SpringHill Camps as a Counselor and then Area Director, and worked in video production during the school year. While I enjoyed my time in government, I am pursuing work as a web developer because I love to build projects that improve the lives of others, and web development is a constantly evolving field that always offers something new to learn.
+I recently graduated (May 2019) from the University of Michigan with a major in Economics and a minor in Computer Science. During my junior and senior years in college, and the summers in between, I worked for Governor Snyder, first as an unpaid intern (ouch) and then as paid part-time staff. Prior to that, I spent my summers working for SpringHill Camps as a Counselor and then Area Director, and worked in video production during the school year. While I enjoyed my time in government, I am pursuing work as a web developer because I love to build projects that improve the lives of others, and web development is a constantly evolving field that always offers something new to learn.
 
 # Technologies I'm Familiar With
 
