@@ -15,8 +15,8 @@ const IndexPage = ({ data }) => {
       <div className={styles.index}>
         <h1 className={styles.name}>Hadley Gaines</h1>
         <p className={styles.tagLine}>
-          Recent U of M grad (May 2019), former staff for a governor, and
-          current aspiring web developer.
+          Recent University of Michigan grad (May 2019), former staff for a
+          governor, and current aspiring web developer.
         </p>
         <Img
           fluid={data.file.childImageSharp.fluid}
