@@ -14,6 +14,7 @@ I recently graduated (May 2019) from the University of Michigan with a major in 
 - HTML
 - CSS/SCSS
 - SQL
+- PHP
 - C++
   - Used for all projects in the 3 core U of M Computer Science classes (EECS 183: Elementary Programming Concepts, EECS 280: Programming and Introductory Data Structures, EECS 281: Data Structures and Algorithms)
 - Python
