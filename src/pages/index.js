@@ -27,7 +27,7 @@ const IndexPage = ({ data }) => {
             About Me
           </Link>
           <Link className={styles.link} to="/projects">
-            My Projects
+            Projects
           </Link>
           <Link className={styles.link} to="/contact">
             Contact Me
