@@ -1,8 +1,9 @@
 ---
-title: "Org to Resume"
+title: Org to Resume
 featuredImage: ../../../images/org-to-resume-one.png
-projectLink: "https://org-to-resume.netlify.com"
-codeLink: "https://github.com/gainhad/org-to-resume"
+projectLink: 'https://org-to-resume.netlify.com'
+codeLink: 'https://github.com/gainhad/org-to-resume'
+published: true
 ---
 # Project Description
 
@@ -10,7 +11,7 @@ Org-to-Resume allows users to write Org Markup documents (Org Markup Information
 
 # Future Plans
 
-The app currently only supports a subset of the Org Markup syntax. While I think I have pretty much everything necessary for my use case (resumes), I do hope to add support for more Org features in the future. I would also like to connect the app to Dropbox or Google Drive. Currently, documents are simply stored in localStorage, which is great for preventing lost progress on refresh, but obviously not a long-term storage solution.
+The app currently only supports a subset of the Org Markup syntax. While I think I have pretty much everything necessary for my use case (resumes), I do hope to add support for more Org features in the future. I would also like to connect the app to Dropbox or Google Drive. Currently, documents are simply stored in localStorage, which is great for preventing lost progress on refresh, but obviously not a long-term storage <b>solution</b>.
 
 # Technology used
 
